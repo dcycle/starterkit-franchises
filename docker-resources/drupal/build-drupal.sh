@@ -39,9 +39,11 @@ composer require \
   drupal/paragraphs \
   drupal/masquerade \
   drupal/bootstrap \
-  drupal/stage_file_proxy:^1 \
   drupal/letsencrypt_challenge \
-  drupal/smtp
+  drupal/smtp \
+  drupal/stage_file_proxy:^1 \
+  drupal/uli_custom_workflow \
+  && echo "All done"
 
 # If plugins are not allowed as per https://getcomposer.org/allow-plugins (see
 # above) then modules/contrib will not exist. Fail fast is such is the case.
