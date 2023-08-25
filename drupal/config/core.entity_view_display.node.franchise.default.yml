@@ -1,0 +1,37 @@
+uuid: f91991e6-ef48-4a4f-bbd5-f5882b3bb317
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.franchise.body
+    - field.field.node.franchise.field_address
+    - node.type.franchise
+  module:
+    - geolocation
+    - text
+    - user
+id: node.franchise.default
+targetEntityType: node
+bundle: franchise
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_address:
+    type: geolocation_latlng
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

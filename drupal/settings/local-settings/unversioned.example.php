@@ -17,3 +17,6 @@ $config['smtp.settings']['smtp_port'] = 465;
 $config['smtp.settings']['smtp_username'] = 'YOUR_NAME@gmail.com';
 $config['smtp.settings']['smtp_password'] = 'YOUR_PASSWORD';
 $config['smtp.settings']['smtp_protocol'] = 'ssl';
+
+$config['geolocation_google_maps.settings']['google_map_api_key'] = 'fronendkey';
+$config['geolocation_google_maps.settings']['google_map_api_server_key'] = 'backendkey';

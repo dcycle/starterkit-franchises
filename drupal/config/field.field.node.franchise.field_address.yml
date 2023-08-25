@@ -1,0 +1,21 @@
+uuid: 805398c8-3085-420c-acfa-cc7ed4651371
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.franchise
+  module:
+    - geolocation
+id: node.franchise.field_address
+field_name: field_address
+entity_type: node
+bundle: franchise
+label: Address
+description: 'The address of this franchises. Franchises can have only one address.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation
