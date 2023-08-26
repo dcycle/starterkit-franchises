@@ -8,8 +8,6 @@ module:
   block_content: 0
   breakpoint: 0
   config: 0
-  contact: 0
-  contextual: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -22,13 +20,10 @@ module:
   geolocation: 0
   geolocation_address: 0
   geolocation_google_maps: 0
-  help: 0
-  history: 0
   image: 0
   jquery_ui: 0
   jquery_ui_autocomplete: 0
   jquery_ui_menu: 0
-  letsencrypt_challenge: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -39,16 +34,12 @@ module:
   path: 0
   path_alias: 0
   phpass: 0
-  search: 0
-  shortcut: 0
   smtp: 0
   system: 0
   taxonomy: 0
   text: 0
   toolbar: 0
-  tour: 0
   uli_custom_workflow: 0
-  update: 0
   user: 0
   views_ui: 0
   views: 10

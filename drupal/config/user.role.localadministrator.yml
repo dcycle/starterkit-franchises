@@ -7,14 +7,12 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
-    - contextual
     - file
     - node
     - path
     - system
     - taxonomy
     - toolbar
-    - tour
 id: localadministrator
 label: Administrator
 weight: 4
@@ -22,10 +20,8 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
-  - 'access contextual links'
   - 'access files overview'
   - 'access toolbar'
-  - 'access tour'
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'

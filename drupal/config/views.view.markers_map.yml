@@ -454,7 +454,7 @@ display:
                 weight: 0
                 settings:
                   info_window_solitary: true
-                  disable_auto_pan: true
+                  disable_auto_pan: false
                   info_auto_display: false
                   max_width: null
                 enabled: true
