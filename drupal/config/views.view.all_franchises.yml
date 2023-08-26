@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - node.type.franchise
+    - system.menu.admin
   module:
     - node
     - user
@@ -278,6 +279,15 @@ display:
         arguments: false
       display_extenders: {  }
       path: admin/franchises
+      menu:
+        type: normal
+        title: Franchises
+        description: ''
+        weight: 0
+        expanded: false
+        menu_name: admin
+        parent: system.admin
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:
