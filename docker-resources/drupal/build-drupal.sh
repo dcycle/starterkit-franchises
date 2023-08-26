@@ -30,7 +30,6 @@ composer config repositories.drupal composer https://packages.drupal.org/8
 
 composer require \
   drupal/address \
-  drupal/conditional_fields \
   drupal/devel \
   drupal/field_group \
   drupal/email_registration \
