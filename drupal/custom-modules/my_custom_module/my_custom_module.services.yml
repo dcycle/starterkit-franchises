@@ -1,0 +1,4 @@
+---
+services:
+  mymodule.mymodule:
+    class: Drupal\my_custom_module\App

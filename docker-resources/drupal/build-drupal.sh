@@ -29,19 +29,23 @@ composer config --no-plugins allow-plugins.drupal/* true
 composer config repositories.drupal composer https://packages.drupal.org/8
 
 composer require \
+  drupal/address \
   drupal/devel \
   drupal/field_group \
   drupal/email_registration \
-  drupal/token \
+  drupal/geolocation \
   drupal/metatag \
+  drupal/token \
   drupal/pathauto \
   drupal/webform:^6 \
   drupal/paragraphs \
   drupal/masquerade \
   drupal/bootstrap \
-  drupal/stage_file_proxy:^1 \
   drupal/letsencrypt_challenge \
-  drupal/smtp
+  drupal/smtp \
+  drupal/stage_file_proxy:^1 \
+  drupal/uli_custom_workflow \
+  && echo "All done"
 
 # If plugins are not allowed as per https://getcomposer.org/allow-plugins (see
 # above) then modules/contrib will not exist. Fail fast is such is the case.

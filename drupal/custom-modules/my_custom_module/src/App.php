@@ -2,6 +2,7 @@
 
 namespace Drupal\my_custom_module;
 
+use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Drupal\my_custom_module\traits\Environment;
 use Drupal\my_custom_module\traits\Singleton;
 
@@ -10,6 +11,7 @@ use Drupal\my_custom_module\traits\Singleton;
  */
 class App {
 
+  use StringTranslationTrait;
   use Singleton;
   use Environment;
 

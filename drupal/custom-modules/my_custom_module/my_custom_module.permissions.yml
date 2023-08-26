@@ -1,0 +1,11 @@
+administer assigned franchises:
+  title: 'administer assigned franchises'
+  description: "Edit franchises, including associated content, in one's profile's My Franchises field."
+
+view administrative franchise list:
+  title: 'view administrative franchise list'
+  description: "View an administrative franchise list."
+
+administer all franchises:
+  title: 'administer all franchises'
+  description: "Edit all franchises, including associated content."

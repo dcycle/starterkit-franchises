@@ -1,0 +1,46 @@
+uuid: b92afffd-f6a9-445b-8a02-a161129b5491
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.franchise
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - file
+    - my_custom_module
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+id: localadministrator
+label: Administrator
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'administer all franchises'
+  - 'administer assigned franchises'
+  - 'administer url aliases'
+  - 'create article content'
+  - 'create page content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any franchise content'
+  - 'edit own article content'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'view administrative franchise list'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

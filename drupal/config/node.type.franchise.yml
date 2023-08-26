@@ -1,0 +1,17 @@
+uuid: f4458bfe-4240-48c9-91f2-34d56e8610f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Franchise
+type: franchise
+description: 'A specific location.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

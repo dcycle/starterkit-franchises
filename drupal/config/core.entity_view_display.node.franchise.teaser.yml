@@ -1,0 +1,34 @@
+uuid: 6b8a99da-96e1-4330-852a-cf907af86ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.franchise.body
+    - field.field.node.franchise.field_address
+    - field.field.node.franchise.field_location_pictures
+    - image.style.thumbnail
+    - node.type.franchise
+  module:
+    - image
+    - user
+id: node.franchise.teaser
+targetEntityType: node
+bundle: franchise
+mode: teaser
+content:
+  field_location_pictures:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_address: true
+  links: true

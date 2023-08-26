@@ -1,0 +1,38 @@
+uuid: 12b45d29-8641-426f-b972-e2cf8498e725
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_pictures
+    - node.type.franchise
+  module:
+    - image
+id: node.franchise.field_location_pictures
+field_name: field_location_pictures
+entity_type: node
+bundle: franchise
+label: 'Location Pictures'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

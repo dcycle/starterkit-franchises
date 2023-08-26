@@ -15,3 +15,7 @@ namespace Drupal\Core\Form{
   class FormBase {}
   class FormStateInterface {}
 }
+
+namespace Drupal\Core\StringTranslation {
+  trait StringTranslationTrait {}
+}
