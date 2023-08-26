@@ -4,10 +4,12 @@ status: true
 dependencies:
   config:
     - node.type.article
+    - node.type.franchise
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
     - file
+    - my_custom_module
     - node
     - path
     - system
@@ -24,6 +26,7 @@ permissions:
   - 'access content overview'
   - 'access files overview'
   - 'access toolbar'
+  - 'administer assigned franchises'
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
@@ -34,10 +37,11 @@ permissions:
   - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
+  - 'edit any franchise content'
   - 'edit own article content'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
-  - 'view all revisions'
+  - 'view administrative franchise list'
   - 'view own unpublished content'
   - 'view the administration theme'

@@ -1,0 +1,30 @@
+uuid: 03c9a323-030b-4402-9316-3b5e6bf568fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.my_franchises
+  module:
+    - system
+    - views
+  theme:
+    - claro
+id: claro_views_block__my_franchises_block_1
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:my_franchises-block_1'
+settings:
+  id: 'views_block:my_franchises-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /admin/franchises

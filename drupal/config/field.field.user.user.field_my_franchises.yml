@@ -1,0 +1,30 @@
+uuid: 64dfe40e-e38f-4f39-87de-5e4b1197fe6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_my_franchises
+    - node.type.franchise
+  module:
+    - user
+id: user.user.field_my_franchises
+field_name: field_my_franchises
+entity_type: user
+bundle: user
+label: 'My Franchises'
+description: 'Franchises with which this user can interact (add pages, modify, etc.). All franchises will automatically be selected for administrators and superadministrators.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      franchise: franchise
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
