@@ -5,9 +5,12 @@ dependencies:
   config:
     - field.field.node.franchise.body
     - field.field.node.franchise.field_address
+    - field.field.node.franchise.field_location_pictures
+    - image.style.thumbnail
     - node.type.franchise
   module:
     - geolocation_google_maps
+    - image
     - path
     - text
 id: node.franchise.default
@@ -65,6 +68,14 @@ content:
         height: 400px
         width: 100%
         gestureHandling: auto
+    third_party_settings: {  }
+  field_location_pictures:
+    type: image_image
+    weight: 123
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   path:
     type: path
