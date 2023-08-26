@@ -22,12 +22,4 @@ class App {
     // Just an example of where you'd implement testable hooks.
   }
 
-  public function hookPermission() : array {
-    return [
-      'administer franchises' => [
-        'title' => $this->t('Administer franchises'),
-      ],
-    ];
-  }
-
 }

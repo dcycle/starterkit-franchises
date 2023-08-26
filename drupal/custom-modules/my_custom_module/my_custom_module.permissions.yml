@@ -1,0 +1,3 @@
+administer franchises:
+  title: 'administer franchises'
+  description: "Allow users to view franchises in their profile's My Franchises field."

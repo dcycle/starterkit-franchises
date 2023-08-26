@@ -18,10 +18,3 @@ function app() : App {
 function my_custom_module_cron() {
   app()->hookCron();
 }
-
-/**
- * Implements hook_permission().
- */
-function my_custom_module_permission() {
-  return app()->hookPermission();
-}
