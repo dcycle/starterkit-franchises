@@ -2,5 +2,3 @@
 services:
   mymodule.mymodule:
     class: Drupal\my_custom_module\App
-  mymodule.entity_factory:
-    class: Drupal\my_custom_module\MyEntity\MyEntityFactory
