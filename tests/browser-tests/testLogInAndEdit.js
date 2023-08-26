@@ -26,8 +26,8 @@ it('It should be possible to log in and edit a node', async function() {
 
     await testBase.screenshot(page, 'user', await page.content());
 
-    console.log('go to /node/1/edit')
-    await page.goto('http://webserver/node/1/edit')
+    console.log('go to /node/30/edit')
+    await page.goto('http://webserver/node/30/edit')
 
     await page.waitForSelector('#edit-status-value')
     await testBase.screenshot(page, 'node-1-edit', await page.content());
