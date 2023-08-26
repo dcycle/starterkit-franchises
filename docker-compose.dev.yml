@@ -59,8 +59,13 @@ services:
 # See https://github.com/docker/compose/issues/3736.
 networks:
   default:
+<<<<<<< HEAD
     external:
       name: starterkit_franchises_default
+=======
+    external: true
+    name: starterkit_franchises_default
+>>>>>>> 0d0c13c5571fa3cd3a3fc78db2b840316f5167fd
 
 volumes:
   tmp:
