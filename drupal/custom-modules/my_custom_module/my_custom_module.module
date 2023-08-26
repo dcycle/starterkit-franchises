@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\my_custom_module\App;
 
 /**
@@ -17,4 +18,8 @@ function app() : App {
  */
 function my_custom_module_cron() {
   app()->hookCron();
+}
+
+function my_custom_entity_presave(EntityInterface $entity) {
+  app()->hookEntityPresave($entity);
 }
