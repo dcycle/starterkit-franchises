@@ -16,5 +16,12 @@ function app() : App {
  * Implements hook_cron().
  */
 function my_custom_module_cron() {
-  App::instance()->hookCron();
+  app()->hookCron();
+}
+
+/**
+ * Implements hook_permission().
+ */
+function my_custom_module_permission() {
+  return app()->hookPermission();
 }
