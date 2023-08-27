@@ -29,6 +29,10 @@ class App {
     return [
       'frontpage' => [
         'variables' => [
+          // map is a placeholder for the actual map, which should be added
+          // as a render array. See
+          // ./drupal/custom-modules/my_custom_module/src/Controller/Frontpage.php
+          // for an example.
           'map' => NULL,
         ],
       ],
