@@ -5,6 +5,11 @@ Dcycle Franchises
 
 Based on [Dcycle Drupal Starterkit](https://github.com/dcycle/starterkit-drupalsite).
 
+The template
+-----
+
+We are using [w3schools's Gourmet Catering template](https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm).
+
 Resources
 -----
 

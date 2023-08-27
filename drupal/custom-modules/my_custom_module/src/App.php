@@ -22,4 +22,21 @@ class App {
     // Just an example of where you'd implement testable hooks.
   }
 
+  /**
+   * Testable implementation of hook_theme().
+   */
+  public function hookTheme($existing = [], $type = '', $theme = '', $path = '') : array {
+    return [
+      'frontpage' => [
+        'variables' => [
+          // Map is a placeholder for the actual map, which should be added
+          // as a render array. See
+          // ./drupal/custom-modules/my_custom_module/src/Controller/Frontpage.php
+          // for an example.
+          'map' => NULL,
+        ],
+      ],
+    ];
+  }
+
 }
