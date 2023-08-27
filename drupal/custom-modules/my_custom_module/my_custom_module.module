@@ -19,3 +19,10 @@ function app() : App {
 function my_custom_module_cron() {
   app()->hookCron();
 }
+
+/**
+ * Implements hook_theme().
+ */
+function my_custom_module_theme($existing, $type, $theme, $path) {
+  return app()->hookTheme($existing, $type, $theme, $path);
+}

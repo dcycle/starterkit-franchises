@@ -4,3 +4,9 @@ my_custom_module.settings:
     _form: '\Drupal\my_custom_module\Form\AdminSettingsForm'
   requirements:
     _permission: 'administer site configuration'
+my_custom_module.frontpage:
+  path: '/frontpage'
+  defaults:
+    _controller: '\Drupal\my_custom_module\Controller\Frontpage::content'
+  requirements:
+    _permission: 'access content'
