@@ -30,6 +30,7 @@ composer config repositories.drupal composer https://packages.drupal.org/8
 
 composer require \
   drupal/address \
+  drupal/admin_theme \
   drupal/devel \
   drupal/field_group \
   drupal/email_registration \
@@ -40,10 +41,10 @@ composer require \
   drupal/webform:^6 \
   drupal/paragraphs \
   drupal/masquerade \
-  drupal/bootstrap \
   drupal/letsencrypt_challenge \
   drupal/smtp \
   drupal/stage_file_proxy:^1 \
+  drupal/toolbar_visibility \
   drupal/uli_custom_workflow \
   && echo "All done"
 

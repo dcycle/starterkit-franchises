@@ -507,7 +507,7 @@ display:
             zoom: 10
             minZoom: 0
             maxZoom: 20
-            height: 400px
+            height: 700px
             width: 100%
             gestureHandling: auto
       row:

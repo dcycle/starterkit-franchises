@@ -1,15 +1,15 @@
-uuid: bf452c3f-a41e-4534-a859-94d2ea183e4f
+uuid: 95237d20-ff77-4d52-9d23-46d620e85fe4
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - olivero
+    - franchises
 _core:
   default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
-id: olivero_content
-theme: olivero
+id: franchises_content
+theme: franchises
 region: content
 weight: 0
 provider: null
