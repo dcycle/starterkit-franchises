@@ -1,0 +1,21 @@
+uuid: dbcb2481-b779-445d-a4d6-26d49bbf2932
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_include_all_locations
+    - node.type.franchise_group
+id: node.franchise_group.field_include_all_locations
+field_name: field_include_all_locations
+entity_type: node
+bundle: franchise_group
+label: 'Include All Locations'
+description: 'If this is checked, then all known locations are included in this group.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
