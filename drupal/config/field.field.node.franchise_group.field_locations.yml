@@ -1,0 +1,29 @@
+uuid: d7a9fbe9-7546-4c78-83b4-b5c7180f6b2b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.franchise
+    - node.type.franchise_group
+id: node.franchise_group.field_locations
+field_name: field_locations
+entity_type: node
+bundle: franchise_group
+label: Locations
+description: 'Locations that are part of this group. Only valid if "Include all locations" is set to false.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      franchise: franchise
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

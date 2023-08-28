@@ -2,11 +2,13 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   address: 0
+  admin_theme: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
   block_content: 0
   breakpoint: 0
+  conditional_fields: 0
   config: 0
   datetime: 0
   dblog: 0
@@ -14,6 +16,7 @@ module:
   editor: 0
   email_registration: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -35,19 +38,20 @@ module:
   path: 0
   path_alias: 0
   phpass: 0
+  r4032login: 0
   smtp: 0
   system: 0
   taxonomy: 0
   text: 0
   toolbar: 0
+  toolbar_visibility: 0
   uli_custom_workflow: 0
   user: 0
   views_ui: 0
   views: 10
   standard: 1000
 theme:
-  olivero: 0
-  bootstrap: 0
-  my_custom_theme: 0
   claro: 0
+  stable9: 0
+  franchises: 0
 profile: standard

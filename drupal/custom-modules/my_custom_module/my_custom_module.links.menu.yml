@@ -1,5 +1,5 @@
 my_custom_module.admin:
-  title: 'My Site'
+  title: 'Settings'
   description: 'Manage custom settings'
   parent: system.admin
   route_name: my_custom_module.settings

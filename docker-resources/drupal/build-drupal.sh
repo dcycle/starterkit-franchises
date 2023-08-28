@@ -30,6 +30,8 @@ composer config repositories.drupal composer https://packages.drupal.org/8
 
 composer require \
   drupal/address \
+  drupal/admin_theme \
+  drupal/conditional_fields \
   drupal/devel \
   drupal/field_group \
   drupal/email_registration \
@@ -40,10 +42,11 @@ composer require \
   drupal/webform:^6 \
   drupal/paragraphs \
   drupal/masquerade \
-  drupal/bootstrap \
   drupal/letsencrypt_challenge \
+  drupal/r4032login \
   drupal/smtp \
   drupal/stage_file_proxy:^1 \
+  drupal/toolbar_visibility \
   drupal/uli_custom_workflow \
   && echo "All done"
 
@@ -66,14 +69,11 @@ fi
 # Docker containers using Docker Compose", March 25, 2022, Dcycle Blog at
 # https://blog.dcycle.com/blog/2022-03-25/php-apache-different-containers/).
 # Putting the latest versions of modules/contrib and themes/contrib in
-# /drupal-modules-contrib and /drupal-themes-contrib allows the update script
+# /drupal-modules-contrib allows the update script
 # at
-rm -rf /drupal-modules-contrib /drupal-themes-contrib
+rm -rf /drupal-modules-contrib
 if [ -d ./modules/contrib ]; then
   cp -r modules/contrib /drupal-modules-contrib
-fi
-if [ -d ./themes/contrib ]; then
-  cp -r ./themes/contrib /drupal-themes-contrib
 fi
 
 # Avoid memory limits with large database imports.

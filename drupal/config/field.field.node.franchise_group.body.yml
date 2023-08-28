@@ -1,0 +1,24 @@
+uuid: 2f80f8d0-e1cf-4c42-8d43-b99ae3b35b81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.franchise_group
+  module:
+    - text
+id: node.franchise_group.body
+field_name: body
+entity_type: node
+bundle: franchise_group
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
