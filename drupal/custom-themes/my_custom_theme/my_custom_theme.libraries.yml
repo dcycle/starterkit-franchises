@@ -1,4 +1,10 @@
 global-styling:
   css:
     theme:
+      css/w3.css: {}
       css/style.css: {}
+
+map:
+  css:
+    theme:
+      libraries/map/map.css: {}

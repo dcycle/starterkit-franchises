@@ -1,3 +1,6 @@
-/**
- * Place your custom styles here.
- */
+/* Taken from https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm */
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
