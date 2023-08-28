@@ -69,14 +69,11 @@ fi
 # Docker containers using Docker Compose", March 25, 2022, Dcycle Blog at
 # https://blog.dcycle.com/blog/2022-03-25/php-apache-different-containers/).
 # Putting the latest versions of modules/contrib and themes/contrib in
-# /drupal-modules-contrib and /drupal-themes-contrib allows the update script
+# /drupal-modules-contrib allows the update script
 # at
-rm -rf /drupal-modules-contrib /drupal-themes-contrib
+rm -rf /drupal-modules-contrib
 if [ -d ./modules/contrib ]; then
   cp -r modules/contrib /drupal-modules-contrib
-fi
-if [ -d ./themes/contrib ]; then
-  cp -r ./themes/contrib /drupal-themes-contrib
 fi
 
 # Avoid memory limits with large database imports.
