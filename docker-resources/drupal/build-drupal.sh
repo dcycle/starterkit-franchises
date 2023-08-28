@@ -42,6 +42,7 @@ composer require \
   drupal/paragraphs \
   drupal/masquerade \
   drupal/letsencrypt_challenge \
+  drupal/r4032login \
   drupal/smtp \
   drupal/stage_file_proxy:^1 \
   drupal/toolbar_visibility \

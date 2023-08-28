@@ -6,7 +6,7 @@ name: 'Drush Site-Install'
 mail: admin@example.com
 slogan: ''
 page:
-  403: /user/login
+  403: ''
   404: ''
   front: /frontpage
 admin_compact_mode: false
