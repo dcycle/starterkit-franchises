@@ -26,3 +26,7 @@ function my_custom_module_cron() {
 function my_custom_module_theme($existing, $type, $theme, $path) {
   return app()->hookTheme($existing, $type, $theme, $path);
 }
+
+function my_custom_module_preprocess_node(&$variables) {
+  return app()->hookPreprocessNode($variables);
+}

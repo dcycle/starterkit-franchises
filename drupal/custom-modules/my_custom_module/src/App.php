@@ -36,7 +36,20 @@ class App {
           'map' => NULL,
         ],
       ],
+      'node__franchise' => [
+        'base hook' => 'node',
+      ],
+      'node__franchise_group' => [
+        'base hook' => 'node',
+      ],
     ];
+  }
+
+  function hookPreprocessNode(&$variables) {
+    $node = $variables['node'];
+
+
+    die(print_r(get_class($variables['node'])));
   }
 
 }
