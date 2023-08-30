@@ -48,6 +48,7 @@ module:
   uli_custom_workflow: 0
   user: 0
   views_ui: 0
+  watchdog_watchdog: 0
   views: 10
   standard: 1000
 theme:

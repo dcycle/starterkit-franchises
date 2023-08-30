@@ -3,6 +3,7 @@
 namespace Drupal\my_custom_module;
 
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\my_custom_module\traits\DependencyInjection;
 use Drupal\my_custom_module\traits\Environment;
 use Drupal\my_custom_module\traits\Singleton;
 
@@ -11,6 +12,7 @@ use Drupal\my_custom_module\traits\Singleton;
  */
 class App {
 
+  use DependencyInjection;
   use StringTranslationTrait;
   use Singleton;
   use Environment;
@@ -36,20 +38,36 @@ class App {
           'map' => NULL,
         ],
       ],
-      'node__franchise' => [
+      'node__franchise__full' => [
         'base hook' => 'node',
+        'variables' => [
+          // Map is a placeholder for the actual map, which should be added
+          // as a render array. See
+          // ./drupal/custom-modules/my_custom_module/src/Controller/Frontpage.php
+          // for an example.
+          'map' => NULL,
+        ],
       ],
-      'node__franchise_group' => [
+      'node__franchise_group__full' => [
         'base hook' => 'node',
+        'variables' => [
+          // Map is a placeholder for the actual map, which should be added
+          // as a render array. See
+          // ./drupal/custom-modules/my_custom_module/src/Controller/Frontpage.php
+          // for an example.
+          'map' => NULL,
+        ],
       ],
     ];
   }
 
-  function hookPreprocessNode(&$variables) {
-    $node = $variables['node'];
-
-
-    die(print_r(get_class($variables['node'])));
+  /**
+   * Testable implementation of hook_preprocess_node().
+   */
+  public function hookPreprocessNode(&$variables) {
+    $this->entityFactory()
+      ->fromPreprocessNodeVariables($variables)
+      ->hookPreprocessNode($variables);
   }
 
 }
