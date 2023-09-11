@@ -8,3 +8,8 @@ map:
   css:
     theme:
       libraries/map/map.css: {}
+
+image_wrapper:
+  css:
+    theme:
+      libraries/image_wrapper/image_wrapper.css: {}

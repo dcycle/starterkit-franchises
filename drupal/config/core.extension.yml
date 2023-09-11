@@ -54,6 +54,7 @@ module:
   user: 0
   views_ui: 0
   watchdog_watchdog: 0
+  webform: 0
   views: 10
   standard: 1000
 theme:
