@@ -1,0 +1,27 @@
+uuid: 83bfc0f9-4ccd-4b99-b1ad-53ab2fd06244
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.sidebar_image
+    - field.field.block_content.sidebar_image.field_image
+    - image.style.side_image
+  module:
+    - image
+id: block_content.sidebar_image.default
+targetEntityType: block_content
+bundle: sidebar_image
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: side_image
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

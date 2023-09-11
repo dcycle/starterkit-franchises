@@ -1,0 +1,5 @@
+name: Side Image
+props:
+  type: object
+  required:
+    - image

@@ -1,0 +1,9 @@
+{# https://api.drupal.org/api/drupal/core%21modules%21system%21templates%21menu.html.twig/10 #}
+
+{% if items %}
+  <div class="w3-right w3-hide-small">
+    {% for item in items %}
+      {{ link(item.title, item.url, { 'class':['w3-bar-item', 'w3-button'] }) }}
+    {% endfor %}
+  </div>
+{% endif %}

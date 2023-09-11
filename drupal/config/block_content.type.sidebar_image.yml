@@ -1,0 +1,8 @@
+uuid: b7fb1c0c-b9af-4ef8-a262-3c43a51a8347
+langcode: en
+status: true
+dependencies: {  }
+id: sidebar_image
+label: 'Sidebar Image'
+revision: 0
+description: ''
