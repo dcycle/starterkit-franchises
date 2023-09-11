@@ -1,0 +1,6 @@
+.hero-wrapper {
+  position: relative;
+}
+.hero-wrapper + .hero-wrapper {
+  padding-top: 10px;
+}

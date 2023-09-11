@@ -1,0 +1,8 @@
+uuid: 8be420e8-4f39-4726-a599-a0fa616e36e0
+langcode: en
+status: true
+dependencies: {  }
+id: hero_image
+label: 'Hero image'
+revision: 0
+description: 'A large image with some text'

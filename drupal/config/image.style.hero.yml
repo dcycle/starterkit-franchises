@@ -1,0 +1,31 @@
+uuid: 691cc20c-37fe-4e33-b4a2-39ed0f4c319e
+langcode: en
+status: true
+dependencies: {  }
+name: hero
+label: Hero
+effects:
+  49fc1804-b984-4ac1-a20d-88d84206ea78:
+    uuid: 49fc1804-b984-4ac1-a20d-88d84206ea78
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: true
+  3ff37e36-316a-48f9-b671-28c8ee3d0e3b:
+    uuid: 3ff37e36-316a-48f9-b671-28c8ee3d0e3b
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 800
+      upscale: true
+  44f810e6-714b-40a0-9cde-4368bb18d2be:
+    uuid: 44f810e6-714b-40a0-9cde-4368bb18d2be
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 1600
+      height: 800
+      anchor: center-center

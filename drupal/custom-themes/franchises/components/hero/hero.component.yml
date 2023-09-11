@@ -1,0 +1,17 @@
+name: Hero
+props:
+  type: object
+  required:
+    - image
+  properties:
+    # Can the chip be dismissed by clicking on it?
+    image:
+      type: string
+      title: image
+      description: An image tag.
+    # One of 'primary', or 'secondary'.
+slots:
+  # Content to display in the chip.
+  hero_content:
+    title: Label
+    description: Label of the hero

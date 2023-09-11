@@ -1,0 +1,10 @@
+{% embed 'franchises:hero' with {
+  image: content.field_image[0] | render()
+} %}
+
+  {% block hero_content %}
+    {{ label }}
+  {% endblock %}
+
+{% endembed %}
+

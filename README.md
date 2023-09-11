@@ -10,6 +10,11 @@ The template
 
 We are using [w3schools's Gourmet Catering template](https://www.w3schools.com/w3css/tryw3css_templates_gourmet_catering.htm).
 
+Single-directory components
+-----
+
+This project uses [single-directory components](https://www.drupal.org/docs/develop/theming-drupal/using-single-directory-components/quickstart), for example at ./drupal/custom-themes/franchises/components/hero/hero.component.yml.
+
 Resources
 -----
 
