@@ -2,3 +2,7 @@
 services:
   mymodule.mymodule:
     class: Drupal\my_custom_module\App
+  mymodule.entity_factory:
+    class: Drupal\my_custom_module\MyEntity\MyEntityFactory
+  mymodule.map_factory:
+    class: Drupal\my_custom_module\MyMap\MapFactory

@@ -1,0 +1,24 @@
+uuid: 79fed2e8-8517-4976-9b1e-be9a21821165
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.food_item.field_description
+    - field.field.node.food_item.field_price
+    - node.type.food_item
+  module:
+    - user
+id: node.food_item.teaser
+targetEntityType: node
+bundle: food_item
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true
+  field_price: true

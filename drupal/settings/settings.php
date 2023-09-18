@@ -750,5 +750,5 @@ $settings['trusted_host_patterns'] = [
   // example at http://webserver/user).
   '^webserver$',
   '^example\.com$',
-  '^starterkit-drupal\.dcycleproject\.org$',
+  '^starterkit-franchises\.dcycleproject\.org$',
 ];

@@ -7,3 +7,7 @@ description: 'Sample Franchise Theme'
 
 libraries:
   - 'franchises/global-styling'
+
+regions:
+  menu: Menu
+  tabs: Tabs

@@ -1,0 +1,31 @@
+uuid: 612a70fc-205c-447c-b44d-e5db0c848f22
+langcode: en
+status: true
+dependencies: {  }
+name: side_image
+label: 'Side Image'
+effects:
+  f6cb81a3-17d9-48a4-9f50-b2137c73f1de:
+    uuid: f6cb81a3-17d9-48a4-9f50-b2137c73f1de
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: null
+      upscale: true
+  fb041ce5-e797-49ab-9adc-2169d071f0c9:
+    uuid: fb041ce5-e797-49ab-9adc-2169d071f0c9
+    id: image_scale
+    weight: 2
+    data:
+      width: null
+      height: 750
+      upscale: true
+  c2622ff1-dc78-4314-823d-61c92a93db58:
+    uuid: c2622ff1-dc78-4314-823d-61c92a93db58
+    id: image_scale_and_crop
+    weight: 3
+    data:
+      width: 500
+      height: 750
+      anchor: center-center

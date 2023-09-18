@@ -48,6 +48,7 @@ composer require \
   drupal/stage_file_proxy:^1 \
   drupal/toolbar_visibility \
   drupal/uli_custom_workflow \
+  drupal/watchdog_watchdog \
   && echo "All done"
 
 # If plugins are not allowed as per https://getcomposer.org/allow-plugins (see
