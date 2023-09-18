@@ -7,3 +7,9 @@ h1, h2, h3, h4, h5, h6 {
 .franchises-below-sticky {
   padding-top: 64px;
 }
+.layout + .layout {
+  padding-top: 10px;
+}
+.layout__region + .layout__region {
+  padding-left: 10px;
+}

@@ -9,6 +9,18 @@ map:
     theme:
       libraries/map/map.css: {}
 
+tabs:
+  css:
+    theme:
+      components/tabs/tabs.css: {}
+
+hero:
+  css:
+    theme:
+      components/hero/hero.css: {}
+  dependencies:
+  - franchises/image_wrapper
+
 image_wrapper:
   css:
     theme:

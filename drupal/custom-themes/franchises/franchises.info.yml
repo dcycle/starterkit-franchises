@@ -10,3 +10,4 @@ libraries:
 
 regions:
   menu: Menu
+  tabs: Tabs

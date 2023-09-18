@@ -1,0 +1,20 @@
+uuid: 28cffbc1-e53f-4593-bc0c-7e4844141dad
+langcode: en
+status: true
+dependencies:
+  theme:
+    - franchises
+id: franchises_tabs
+theme: franchises
+region: tabs
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

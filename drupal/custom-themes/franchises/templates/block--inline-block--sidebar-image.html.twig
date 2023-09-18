@@ -1,13 +1,9 @@
 <div{{ attributes }}>
-{{ title_prefix }}
-{% if label %}
-  <h2{{ title_attributes }}>{{ label }}</h2>
-{% endif %}
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
+  {% endif %}
   {{ title_suffix }}
-{% embed 'franchises:side_image' with {
-  image: content.field_image[0] | render()
-} %}
-  {% block side_image_content %}
-  {% endblock %}
-{% endembed %}
+  {% set image = content.field_image[0] %}
+  {% include directory ~ '/components/side_image/side_image.twig' %}
 </div>

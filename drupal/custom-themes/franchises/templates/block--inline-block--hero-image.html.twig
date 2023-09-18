@@ -1,16 +1,7 @@
 <div{{ attributes }}>
-{{ title_prefix }}
-{% if label %}
-  <h2{{ title_attributes }}>{{ label }}</h2>
-{% endif %}
+  {{ title_prefix }}
   {{ title_suffix }}
-{% embed 'franchises:hero' with {
-  image: content.field_image[0] | render()
-} %}
-
-  {% block hero_content %}
-    {{ label }}
-  {% endblock %}
-
-{% endembed %}
+  {% set image = content.field_image[0] %}
+  {% set label = label %}
+  {% include directory ~ '/components/hero/hero.twig' %}
 </div>

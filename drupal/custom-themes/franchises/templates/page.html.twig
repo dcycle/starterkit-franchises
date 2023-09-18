@@ -6,6 +6,8 @@
   </div>
 </div>
 <div class="w3-display-container w3-content w3-wide franchises-below-sticky">
+  {% set tabs = page.tabs %}
+  {% include directory ~ '/components/tabs/tabs.html.twig' %}
   {{ page.content }}
 </div>
 <div>
