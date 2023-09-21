@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.franchise.field_address
     - field.field.node.franchise.field_address_for_display_
     - field.field.node.franchise.field_location_pictures
+    - field.field.node.franchise.field_metatags
     - image.style.thumbnail
     - node.type.franchise
   module:
@@ -33,4 +34,5 @@ hidden:
   body: true
   field_address: true
   field_address_for_display_: true
+  field_metatags: true
   links: true

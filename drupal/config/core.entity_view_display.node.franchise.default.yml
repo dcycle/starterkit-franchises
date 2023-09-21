@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.franchise.field_address
     - field.field.node.franchise.field_address_for_display_
     - field.field.node.franchise.field_location_pictures
+    - field.field.node.franchise.field_metatags
     - filter.format.plain_text
     - node.type.franchise
   module:
     - geolocation
     - image
+    - metatag
     - text
     - user
 id: node.franchise.default
@@ -355,6 +357,13 @@ content:
         attribute: lazy
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 105
     region: content
   links:
     settings: {  }
