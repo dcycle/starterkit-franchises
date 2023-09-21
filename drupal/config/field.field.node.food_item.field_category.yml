@@ -1,0 +1,29 @@
+uuid: 4530f9e0-50ed-47e7-8de4-99110dcac9c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_category
+    - node.type.food_item
+    - taxonomy.vocabulary.food_category
+id: node.food_item.field_category
+field_name: field_category
+entity_type: node
+bundle: food_item
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      food_category: food_category
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

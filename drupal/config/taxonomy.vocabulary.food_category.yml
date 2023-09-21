@@ -1,0 +1,8 @@
+uuid: 86bf16c5-8280-44aa-8d1d-0a621073e7f2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Food Category'
+vid: food_category
+description: ''
+weight: 0
