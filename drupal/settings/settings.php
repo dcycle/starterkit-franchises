@@ -751,4 +751,5 @@ $settings['trusted_host_patterns'] = [
   '^webserver$',
   '^example\.com$',
   '^starterkit-franchises\.dcycleproject\.org$',
+  '^starterkit-franchises\.local$',
 ];
