@@ -163,22 +163,21 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        title:
+          id: title
           table: node_field_data
-          field: created
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          entity_field: title
+          plugin_id: standard
+          order: ASC
           expose:
             label: ''
             field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
@@ -780,6 +779,36 @@ display:
           empty: true
           view_to_insert: 'markers_map:block_5'
           inherit_arguments: false
+      sorts:
+        field_address_proximity:
+          id: field_address_proximity
+          table: node__field_address
+          field: field_address_proximity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: geolocation_sort_proximity
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       filters:
         status:
           id: status
@@ -914,6 +943,7 @@ display:
       defaults:
         empty: false
         fields: false
+        sorts: false
         filters: false
         filter_groups: false
       display_description: ''
@@ -1891,6 +1921,22 @@ display:
               settings:
                 access_key: ''
               location_plugin_id: ipstack
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       filters:
         status:
           id: status
@@ -1918,6 +1964,7 @@ display:
           1: AND
       defaults:
         fields: false
+        sorts: false
         filters: false
         filter_groups: false
       display_description: ''
