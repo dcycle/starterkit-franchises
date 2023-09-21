@@ -1,0 +1,19 @@
+uuid: bfdb9149-e34a-4b50-baea-213bee6d1131
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_address_for_display_
+field_name: field_address_for_display_
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

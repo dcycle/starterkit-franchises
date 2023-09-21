@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.franchise.body
     - field.field.node.franchise.field_address
+    - field.field.node.franchise.field_address_for_display_
     - field.field.node.franchise.field_location_pictures
     - image.style.thumbnail
     - node.type.franchise
@@ -69,6 +70,14 @@ content:
         width: 100%
         gestureHandling: auto
     third_party_settings: {  }
+  field_address_for_display_:
+    type: text_textarea
+    weight: 124
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
   field_location_pictures:
     type: image_image
     weight: 123
@@ -121,5 +130,10 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
+    settings: {  }
     third_party_settings: {  }
 hidden: {  }

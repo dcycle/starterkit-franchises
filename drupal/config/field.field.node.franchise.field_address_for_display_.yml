@@ -1,0 +1,22 @@
+uuid: ab9a362b-493e-492c-bb8d-09b936cdc616
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_for_display_
+    - node.type.franchise
+  module:
+    - text
+id: node.franchise.field_address_for_display_
+field_name: field_address_for_display_
+entity_type: node
+bundle: franchise
+label: 'Address (for display)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
