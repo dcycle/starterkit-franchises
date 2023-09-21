@@ -211,6 +211,37 @@ display:
           marker_icon_path: ''
           even_empty: 1
           centre:
+            client_location:
+              enable: false
+              weight: 0
+              map_center_id: client_location
+            fixed_value:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: fixed_value
+                latitude: null
+                longitude: null
+              map_center_id: location_plugins
+            first_row:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: first_row
+              map_center_id: location_plugins
+            views_proximity_filter:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: field_address_proximity
+              map_center_id: location_plugins
+            ipstack:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: ipstack
+                access_key: ''
+              map_center_id: location_plugins
             fixed_boundaries:
               enable: false
               weight: 0
@@ -220,38 +251,13 @@ display:
                 north: ''
                 east: ''
               map_center_id: fixed_boundaries
-            client_location:
-              enable: false
-              weight: 0
-              map_center_id: client_location
             fit_bounds:
               enable: true
               weight: 0
               settings:
                 reset_zoom: false
-                min_zoom: null
+                min_zoom: 10
               map_center_id: fit_bounds
-            ipstack:
-              enable: false
-              weight: 0
-              settings:
-                location_option_id: ipstack
-                access_key: ''
-              map_center_id: location_plugins
-            first_row:
-              enable: false
-              weight: 0
-              settings:
-                location_option_id: first_row
-              map_center_id: location_plugins
-            fixed_value:
-              enable: false
-              weight: 0
-              settings:
-                location_option_id: fixed_value
-                latitude: null
-                longitude: null
-              map_center_id: location_plugins
           map_provider_id: google_maps
           map_provider_settings:
             map_features:
@@ -823,6 +829,721 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_address'
+  page_2:
+    id: page_2
+    display_title: 'Page 2'
+    display_plugin: page
+    position: 4
+    display_options:
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            make_link: false
+            absolute: false
+            word_boundary: false
+            ellipsis: false
+            strip_tags: false
+            trim: false
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_address:
+          id: field_address
+          table: node__field_address
+          field: field_address
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: geolocation_field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: ''
+          type: geolocation_latlng
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_address_proximity:
+          id: field_address_proximity
+          table: node__field_address
+          field: field_address_proximity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: geolocation_field_proximity
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          set_precision: false
+          precision: 0
+          decimal: .
+          separator: ','
+          format_plural: false
+          format_plural_string: !!binary MQNAY291bnQ=
+          prefix: ''
+          suffix: ''
+          display_unit: km
+          center:
+            fixed_value:
+              enable: false
+              weight: 0
+              settings:
+                latitude: ''
+                longitude: ''
+              location_plugin_id: fixed_value
+            first_row:
+              enable: false
+              weight: 0
+              location_plugin_id: first_row
+            field_address_proximity:
+              enable: true
+              weight: 0
+              location_plugin_id: views_proximity_filter
+            ipstack:
+              enable: false
+              weight: 0
+              settings:
+                access_key: ''
+              location_plugin_id: ipstack
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+        field_address_proximity:
+          id: field_address_proximity
+          table: node__field_address
+          field: field_address_proximity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: geolocation_sort_proximity
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+      filters:
+        status:
+          id: status
+          table: node_field_data
+          field: status
+          entity_type: node
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            franchise: franchise
+        field_address_proximity:
+          id: field_address_proximity
+          table: node__field_address
+          field: field_address_proximity
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: geolocation_filter_proximity
+          operator: '<='
+          value:
+            min: ''
+            max: ''
+            value: '300'
+            center: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_address_proximity_op
+            label: 'Proximity (field_address)'
+            description: ''
+            use_operator: false
+            operator: field_address_proximity_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_address_proximity
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              content_editor: '0'
+              administrator: '0'
+              localadministrator: '0'
+            min_placeholder: ''
+            max_placeholder: ''
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          unit: mi
+          location_input:
+            coordinates:
+              enable: false
+              weight: 0
+              location_input_id: coordinates
+            geocoder:
+              enable: true
+              weight: 0
+              settings:
+                plugin_id: google_geocoding_api
+                settings:
+                  label: Address
+                  description: 'Enter an address to be localized.'
+                  autocomplete_min_length: 1
+                  component_restrictions:
+                    route: ''
+                    country: ''
+                    administrative_area: ''
+                    locality: ''
+                    postal_code: ''
+                  boundary_restriction:
+                    south: ''
+                    west: ''
+                    north: ''
+                    east: ''
+                  region: ''
+                hide_form: false
+                auto_submit: false
+              location_input_id: geocoder
+            client_location:
+              enable: false
+              weight: 0
+              settings:
+                hide_form: false
+                auto_submit: false
+              location_input_id: client_location
+            'fixed_value:fixed_value':
+              enable: false
+              weight: 0
+              settings:
+                location_settings:
+                  settings:
+                    latitude: ''
+                    longitude: ''
+                location_plugin_id: fixed_value
+              location_input_id: location_plugins
+            'first_row:first_row':
+              enable: false
+              weight: 0
+              settings:
+                location_plugin_id: first_row
+              location_input_id: location_plugins
+            'ipstack:ipstack':
+              enable: false
+              weight: 0
+              settings:
+                location_settings:
+                  settings:
+                    access_key: ''
+                location_plugin_id: ipstack
+              location_input_id: location_plugins
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: maps_common
+        options:
+          data_provider_id: geolocation_field_provider
+          geolocation_field: field_address
+          title_field: none
+          label_field: none
+          marker_row_number: 0
+          marker_icon_path: ''
+          even_empty: 1
+          centre:
+            client_location:
+              enable: false
+              weight: 0
+              map_center_id: client_location
+            fixed_value:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: fixed_value
+                latitude: null
+                longitude: null
+              map_center_id: location_plugins
+            first_row:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: first_row
+              map_center_id: location_plugins
+            views_proximity_filter:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: field_address_proximity
+              map_center_id: location_plugins
+            ipstack:
+              enable: false
+              weight: 0
+              settings:
+                location_option_id: ipstack
+                access_key: ''
+              map_center_id: location_plugins
+            fixed_boundaries:
+              enable: false
+              weight: 0
+              settings:
+                south: ''
+                west: ''
+                north: ''
+                east: ''
+              map_center_id: fixed_boundaries
+            fit_bounds:
+              enable: true
+              weight: 0
+              settings:
+                reset_zoom: false
+                min_zoom: 10
+              map_center_id: fit_bounds
+          map_provider_id: google_maps
+          map_provider_settings:
+            map_features:
+              google_maps_layer_bicycling:
+                weight: 0
+                enabled: false
+              client_location_indicator:
+                weight: 0
+                enabled: false
+              context_popup:
+                weight: 0
+                settings:
+                  content:
+                    value: ''
+                    format: basic_html
+                enabled: false
+              drawing:
+                weight: 0
+                settings:
+                  polyline: false
+                  strokeColor: '#FF0000'
+                  strokeOpacity: '0.8'
+                  strokeWeight: '2'
+                  geodesic: false
+                  polygon: false
+                  fillColor: '#FF0000'
+                  fillOpacity: '0.35'
+                enabled: false
+              geolocation_google_maps_control_directions:
+                weight: 0
+                settings:
+                  position: RIGHT_CENTER
+                  behavior: default
+                  origin_source: exposed
+                  origin_static_value: ''
+                  destination_source: exposed
+                  destination_static_value: ''
+                  travel_mode: exposed
+                  directions_container: below
+                  directions_container_custom_id: ''
+                enabled: false
+              map_disable_tilt:
+                weight: 0
+                enabled: false
+              map_disable_poi:
+                weight: 0
+                enabled: false
+              map_disable_user_interaction:
+                weight: 0
+                enabled: false
+              geolocation_shapes:
+                weight: 0
+                settings:
+                  remove_markers: false
+                  polyline: true
+                  polyline_title: ''
+                  strokeColor: '#FF0000'
+                  strokeOpacity: 0.8
+                  strokeWidth: '2'
+                  polygon: false
+                  polygon_title: ''
+                  fillColor: '#FF0000'
+                  fillOpacity: 0.35
+                enabled: false
+              control_fullscreen:
+                weight: 0
+                settings:
+                  position: RIGHT_CENTER
+                  behavior: default
+                enabled: false
+              control_geocoder:
+                weight: 0
+                settings:
+                  position: TOP_LEFT
+                  geocoder: google_geocoding_api
+                  settings:
+                    label: Address
+                    description: 'Enter an address to be localized.'
+                    autocomplete_min_length: 1
+                    component_restrictions:
+                      route: ''
+                      country: ''
+                      administrative_area: ''
+                      locality: ''
+                      postal_code: ''
+                    boundary_restriction:
+                      south: ''
+                      west: ''
+                      north: ''
+                      east: ''
+                    region: ''
+                enabled: false
+              control_loading_indicator:
+                weight: 0
+                settings:
+                  position: TOP_LEFT
+                  loading_label: Loading
+                enabled: false
+              control_locate:
+                weight: 0
+                settings:
+                  position: TOP_LEFT
+                enabled: true
+              control_maptype:
+                weight: 0
+                settings:
+                  position: RIGHT_BOTTOM
+                  behavior: default
+                  style: DEFAULT
+                enabled: true
+              control_recenter:
+                weight: 0
+                settings:
+                  position: TOP_LEFT
+                enabled: false
+              control_rotate:
+                weight: 0
+                settings:
+                  position: RIGHT_CENTER
+                  behavior: default
+                enabled: false
+              control_streetview:
+                weight: 0
+                settings:
+                  position: RIGHT_CENTER
+                  behavior: default
+                enabled: false
+              control_zoom:
+                weight: 0
+                settings:
+                  position: RIGHT_CENTER
+                  behavior: default
+                  style: LARGE
+                enabled: true
+              map_restriction:
+                weight: 0
+                settings:
+                  north: ''
+                  south: ''
+                  east: ''
+                  west: ''
+                  strict: true
+                enabled: false
+              map_type_style:
+                weight: 0
+                settings:
+                  style: '[]'
+                enabled: false
+              marker_clusterer:
+                weight: 0
+                settings:
+                  image_path: ''
+                  styles: ''
+                  max_zoom: 15
+                  minimum_cluster_size: 2
+                  zoom_on_click: true
+                  average_center: false
+                  grid_size: 60
+                enabled: true
+              marker_icon:
+                weight: 0
+                settings:
+                  marker_icon_path: ''
+                  anchor:
+                    x: 0
+                    'y': 0
+                  origin:
+                    x: 0
+                    'y': 0
+                  label_origin:
+                    x: 0
+                    'y': 0
+                  size:
+                    width: null
+                    height: null
+                  scaled_size:
+                    width: null
+                    height: null
+                enabled: false
+              marker_infobubble:
+                weight: 0
+                settings:
+                  close_other: 1
+                  close_button: 0
+                  close_button_src: ''
+                  shadow_style: 0
+                  padding: 10
+                  border_radius: 8
+                  border_width: 2
+                  border_color: '#039be5'
+                  background_color: '#fff'
+                  min_width: null
+                  max_width: 550
+                  min_height: null
+                  max_height: null
+                  arrow_style: 2
+                  arrow_position: 30
+                  arrow_size: 10
+                enabled: false
+              marker_infowindow:
+                weight: 0
+                settings:
+                  info_window_solitary: true
+                  disable_auto_pan: false
+                  info_auto_display: false
+                  max_width: null
+                enabled: true
+              marker_label:
+                weight: 0
+                settings:
+                  color: ''
+                  font_family: ''
+                  font_size: ''
+                  font_weight: ''
+                enabled: false
+              marker_opacity:
+                weight: 0
+                settings:
+                  opacity: 1.0
+                enabled: false
+              geolocation_marker_scroll_to_id:
+                weight: 0
+                settings:
+                  scroll_target_id: ''
+                enabled: false
+              marker_zoom_to_animate:
+                weight: 0
+                settings:
+                  marker_zoom_anchor_id: ''
+                enabled: false
+              spiderfying:
+                weight: 0
+                settings:
+                  spiderfiable_marker_path: /modules/contrib/geolocation/modules/geolocation_google_maps/images/marker-plus.svg
+                  markersWontMove: true
+                  markersWontHide: false
+                  keepSpiderfied: true
+                  ignoreMapClick: false
+                  nearbyDistance: 20
+                  circleSpiralSwitchover: 9
+                  circleFootSeparation: 23
+                  spiralFootSeparation: 26
+                  spiralLengthStart: 11
+                  spiralLengthFactor: 4
+                  legWeight: 1.5
+                enabled: false
+              google_maps_layer_traffic:
+                weight: 0
+                enabled: false
+              google_maps_layer_transit:
+                weight: 0
+                enabled: false
+            type: ROADMAP
+            zoom: 10
+            minZoom: 0
+            maxZoom: 20
+            height: 700px
+            width: 100%
+            gestureHandling: auto
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      defaults:
+        pager: false
+        style: false
+        row: false
+        fields: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_extenders: {  }
+      path: location-finder
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
