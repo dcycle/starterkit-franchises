@@ -1,0 +1,28 @@
+uuid: b74959f3-1e89-4aff-b533-78bc9562f066
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.markers_map
+  module:
+    - system
+    - views
+  theme:
+    - franchises
+id: franchises_exposedformmarkers_mappage_2
+theme: franchises
+region: tabs
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:markers_map-page_2'
+settings:
+  id: 'views_exposed_filter_block:markers_map-page_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /location-finder
