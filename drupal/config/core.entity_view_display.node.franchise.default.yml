@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.franchise.body
     - field.field.node.franchise.field_address
+    - field.field.node.franchise.field_address_for_display_
     - field.field.node.franchise.field_location_pictures
     - filter.format.plain_text
     - node.type.franchise
@@ -336,6 +337,13 @@ content:
       data_provider_settings: {  }
     third_party_settings: {  }
     weight: 102
+    region: content
+  field_address_for_display_:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_location_pictures:
     type: image

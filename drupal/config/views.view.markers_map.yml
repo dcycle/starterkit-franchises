@@ -5,12 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_address
+    - field.storage.node.field_address_for_display_
     - node.type.franchise
     - node.type.franchise_group
   module:
     - geolocation
     - geolocation_google_maps
     - node
+    - text
     - user
 id: markers_map
 label: 'Markers Map'
@@ -818,10 +820,11 @@ display:
         - 'config:field.storage.node.field_address'
   page_1:
     id: page_1
-    display_title: Page
+    display_title: 'Page 1'
     display_plugin: page
     position: 1
     display_options:
+      display_description: ''
       display_extenders: {  }
       path: markers-map
     cache_metadata:
@@ -835,7 +838,7 @@ display:
         - 'config:field.storage.node.field_address'
   page_2:
     id: page_2
-    display_title: 'Page 2'
+    display_title: 'Location finder'
     display_plugin: page
     position: 4
     display_options:
@@ -887,6 +890,68 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+        field_address_for_display_:
+          id: field_address_for_display_
+          table: node__field_address_for_display_
+          field: field_address_for_display_
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: text_default
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
         field_address:
           id: field_address
           table: node__field_address
@@ -897,7 +962,7 @@ display:
           entity_type: node
           plugin_id: geolocation_field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -998,17 +1063,17 @@ display:
           element_default_classes: true
           empty: ''
           hide_empty: false
-          empty_zero: false
+          empty_zero: true
           hide_alter_empty: true
-          set_precision: false
+          set_precision: true
           precision: 0
           decimal: .
           separator: ','
-          format_plural: false
-          format_plural_string: !!binary MQNAY291bnQ=
+          format_plural: true
+          format_plural_string: !!binary MSBtaWxlA0Bjb3VudCBtaWxlcw==
           prefix: ''
           suffix: ''
-          display_unit: km
+          display_unit: mi
           center:
             fixed_value:
               enable: false
@@ -1036,6 +1101,20 @@ display:
         options:
           offset: 0
           items_per_page: 0
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'Hello World'
+            format: basic_html
+          tokenize: false
       sorts:
         created:
           id: created
@@ -1101,7 +1180,7 @@ display:
           value:
             min: ''
             max: ''
-            value: '300'
+            value: '50'
             center: {  }
           group: 1
           exposed: true
@@ -1529,6 +1608,7 @@ display:
           separator: ''
           hide_empty: false
       defaults:
+        empty: false
         pager: false
         style: false
         row: false
@@ -1536,6 +1616,7 @@ display:
         sorts: false
         filters: false
         filter_groups: false
+      display_description: ''
       display_extenders: {  }
       path: location-finder
     cache_metadata:
@@ -1548,3 +1629,4 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_address'
+        - 'config:field.storage.node.field_address_for_display_'
