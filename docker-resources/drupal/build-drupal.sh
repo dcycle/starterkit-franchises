@@ -44,6 +44,7 @@ composer require \
   drupal/masquerade \
   drupal/letsencrypt_challenge \
   drupal/r4032login \
+  drupal/redirect \
   drupal/smtp \
   drupal/stage_file_proxy:^1 \
   drupal/toolbar_visibility \

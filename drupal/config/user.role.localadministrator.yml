@@ -26,6 +26,7 @@ permissions:
   - 'access toolbar'
   - 'administer all franchises'
   - 'administer assigned franchises'
+  - 'administer menu'
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
