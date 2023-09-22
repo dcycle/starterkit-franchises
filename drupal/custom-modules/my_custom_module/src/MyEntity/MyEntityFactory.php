@@ -3,8 +3,8 @@
 namespace Drupal\my_custom_module\MyEntity;
 
 use Drupal\my_custom_module\traits\Environment;
-use Drupal\node\NodeInterface;
 use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
 
 /**
  * A factory for our entity wrappers.
@@ -69,7 +69,9 @@ class MyEntityFactory {
    *   A node entity.
    */
   public function fromNid(int $nid) : MyNodeEntityInterface {
+    // @codingStandardsIgnoreStart
     $candidate = Node::load($nid);
+    // @codingStandardsIgnoreEnd
 
     if ($candidate) {
       return $this->fromDrupalNode($candidate);

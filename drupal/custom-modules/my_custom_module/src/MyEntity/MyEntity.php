@@ -29,12 +29,13 @@ class MyEntity {
     $this->drupalEntity = $drupalEntity;
   }
 
-
   /**
    * Get a field value.
    *
    * @param string $name
    *   The name of of a field.
+   * @param string $default
+   *   A default value in case the value cannot be retrieved.
    *
    * @return string
    *   A value, or default.
