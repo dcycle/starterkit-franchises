@@ -1,0 +1,31 @@
+uuid: 08c8cb0e-790e-49fa-a43d-8ea89bf41e32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_on_these_pages
+    - node.type.alert
+    - node.type.franchise
+    - node.type.page
+id: node.alert.field_show_on_these_pages
+field_name: field_show_on_these_pages
+entity_type: node
+bundle: alert
+label: 'Show on these pages'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      page: page
+      franchise: franchise
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: page
+field_type: entity_reference

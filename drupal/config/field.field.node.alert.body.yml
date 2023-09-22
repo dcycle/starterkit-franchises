@@ -1,0 +1,26 @@
+uuid: 72e0d16c-ed0e-4e7e-aaca-0c31e8861804
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - node.type.alert
+  module:
+    - text
+id: node.alert.body
+field_name: body
+entity_type: node
+bundle: alert
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+field_type: text_with_summary

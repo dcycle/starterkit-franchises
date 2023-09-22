@@ -5,3 +5,14 @@ all:
   js:
     js/js.js: {}
     js/DcycleDrupalStarterkit.js: {}
+  dependencies:
+  - my_custom_module/alert
+
+alert:
+  css:
+    theme:
+      libraries/alert/dismissible.css: {}
+      libraries/alert/lineIcons.css: {}
+  js:
+    libraries/alert/dismissible.js: {}
+    libraries/alert/my-alert.js: {}

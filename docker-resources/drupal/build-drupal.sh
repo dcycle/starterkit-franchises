@@ -46,6 +46,7 @@ composer require \
   drupal/letsencrypt_challenge \
   drupal/r4032login \
   drupal/redirect \
+  drupal/scheduler \
   drupal/smtp \
   drupal/stage_file_proxy:^1 \
   drupal/toolbar_visibility \

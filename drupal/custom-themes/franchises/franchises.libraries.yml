@@ -3,6 +3,8 @@ global-styling:
     theme:
       css/w3.css: {}
       css/style.css: {}
+  dependencies:
+  - my_custom_module/all
 
 map:
   css:
