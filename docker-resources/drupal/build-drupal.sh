@@ -31,6 +31,7 @@ composer config repositories.drupal composer https://packages.drupal.org/8
 composer require \
   drupal/address \
   drupal/admin_theme \
+  drupal/admin_toolbar \
   drupal/conditional_fields \
   drupal/devel \
   drupal/field_group \

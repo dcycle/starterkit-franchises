@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.franchise.field_address_for_display_
     - field.field.node.franchise.field_location_pictures
     - field.field.node.franchise.field_metatags
+    - field.field.node.franchise.field_on_page_scripts
     - filter.format.plain_text
     - node.type.franchise
   module:
@@ -364,6 +365,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_on_page_scripts:
+    type: text_trimmed
+    label: above
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 106
     region: content
   links:
     settings: {  }

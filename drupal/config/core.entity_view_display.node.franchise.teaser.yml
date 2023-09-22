@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.franchise.field_address_for_display_
     - field.field.node.franchise.field_location_pictures
     - field.field.node.franchise.field_metatags
+    - field.field.node.franchise.field_on_page_scripts
     - image.style.thumbnail
     - node.type.franchise
   module:
@@ -35,4 +36,5 @@ hidden:
   field_address: true
   field_address_for_display_: true
   field_metatags: true
+  field_on_page_scripts: true
   links: true

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.franchise.field_address_for_display_
     - field.field.node.franchise.field_location_pictures
     - field.field.node.franchise.field_metatags
+    - field.field.node.franchise.field_on_page_scripts
     - image.style.thumbnail
     - node.type.franchise
   module:
@@ -95,6 +96,14 @@ content:
     settings:
       sidebar: true
       use_details: true
+    third_party_settings: {  }
+  field_on_page_scripts:
+    type: text_textarea
+    weight: 126
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
     third_party_settings: {  }
   path:
     type: path

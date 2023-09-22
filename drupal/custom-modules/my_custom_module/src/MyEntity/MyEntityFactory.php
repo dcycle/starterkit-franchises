@@ -3,6 +3,7 @@
 namespace Drupal\my_custom_module\MyEntity;
 
 use Drupal\my_custom_module\traits\Environment;
+use Drupal\node\Entity\Node;
 use Drupal\node\NodeInterface;
 
 /**
@@ -56,6 +57,27 @@ class MyEntityFactory {
       default:
         return new MyNode($node);
     }
+  }
+
+  /**
+   * Extract a node entity from Drupal nid (node ID).
+   *
+   * @param int $nid
+   *   A Drupal nid (node ID).
+   *
+   * @return \Drupal\my_custom_module\MyEntity\MyNodeEntityInterface
+   *   A node entity.
+   */
+  public function fromNid(int $nid) : MyNodeEntityInterface {
+    // @codingStandardsIgnoreStart
+    $candidate = Node::load($nid);
+    // @codingStandardsIgnoreEnd
+
+    if ($candidate) {
+      return $this->fromDrupalNode($candidate);
+    }
+
+    return new MyNodeDoesNotExist();
   }
 
 }
