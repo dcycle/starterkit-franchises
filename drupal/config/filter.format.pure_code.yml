@@ -1,0 +1,8 @@
+uuid: 6dd0f6bc-9806-492e-8959-b53542179dbb
+langcode: en
+status: true
+dependencies: {  }
+name: 'Pure code'
+format: pure_code
+weight: 0
+filters: {  }

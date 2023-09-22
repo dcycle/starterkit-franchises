@@ -3,12 +3,14 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.pure_code
     - node.type.article
     - node.type.franchise
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
     - file
+    - filter
     - my_custom_module
     - node
     - path
@@ -41,6 +43,7 @@ permissions:
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'use text format pure_code'
   - 'view administrative franchise list'
   - 'view all revisions'
   - 'view own unpublished content'

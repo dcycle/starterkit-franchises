@@ -1,0 +1,24 @@
+uuid: 1f6eace7-962a-4442-b389-086c5fcf8622
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_on_page_scripts
+    - filter.format.pure_code
+    - node.type.franchise
+  module:
+    - text
+id: node.franchise.field_on_page_scripts
+field_name: field_on_page_scripts
+entity_type: node
+bundle: franchise
+label: 'On-page scripts'
+description: 'On-page scripts from third-party providers. Exercise caution. To test this with a mock "chat" icon, you can enter: &lt;script type=&quot;text/javascript&quot; id=&quot;hs-script-loader&quot; async defer src=&quot;/modules/custom/my_custom_module/libraries/sample-embed-code/sample-embed-code.js&quot;&gt;&lt;/script&gt;'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - pure_code
+field_type: text_long

@@ -29,6 +29,25 @@ class MyEntity {
     $this->drupalEntity = $drupalEntity;
   }
 
+
+  /**
+   * Get a field value.
+   *
+   * @param string $name
+   *   The name of of a field.
+   *
+   * @return string
+   *   A value, or default.
+   */
+  public function fieldFirstVal(string $name, string $default = '') : string {
+    try {
+      return $this->drupalEntity()->$name->value;
+    }
+    catch (\Throwable $t) {
+      return $default;
+    }
+  }
+
   /**
    * Get the Drupal entity.
    *
