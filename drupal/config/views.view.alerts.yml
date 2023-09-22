@@ -164,7 +164,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '<div class="franchise-alert" data-type="info" data-nid="{{ nid }}">{{ body }}</div>'
+            text: '<div class="franchise-alert franchise-no-display" data-type="info" data-nid="{{ nid }}">{{ body }}</div>'
             make_link: false
             path: ''
             absolute: false

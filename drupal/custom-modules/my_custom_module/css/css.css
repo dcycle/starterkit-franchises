@@ -4,3 +4,6 @@
 .ajaxy > div {
   display: inline;
 }
+.franchise-no-display {
+  display: none;
+}
