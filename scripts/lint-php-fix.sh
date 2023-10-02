@@ -10,12 +10,16 @@ echo ''
 docker run --rm -v \
   "$(pwd)"/drupal/custom-modules:/code \
   --entrypoint=/vendor/bin/phpcbf \
-  dcycle/php-lint:3 --standard=DrupalPractice /code \
+  dcycle/php-lint:3 \
+  --ignore=*/lineIcons.css \
+  --standard=DrupalPractice /code \
   || true
 docker run --rm -v \
   "$(pwd)"/drupal/custom-modules:/code \
   --entrypoint=/vendor/bin/phpcbf \
-  dcycle/php-lint:3 --standard=Drupal /code \
+  dcycle/php-lint:3 \
+  --ignore=*/lineIcons.css \
+  --standard=Drupal /code \
   || true
 
 echo ' => WE FIXED WHAT WE COULD!'

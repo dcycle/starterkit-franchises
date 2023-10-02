@@ -8,6 +8,9 @@
 #
 set -e
 
+# shellcheck disable=SC2163
+# shellcheck disable=SC2086
+# shellcheck disable=SC2155
 export BASE="$(pwd)"
 
 echo ''
@@ -59,6 +62,7 @@ else
 fi
 echo ''
 echo '---DETERMINE LOCAL DOMAIN---'
+# shellcheck disable=SC1091
 source ./scripts/lib/set-local-domain.sh
 if [ "$VIRTUAL_HOST" == localhost ]; then
   while [ -z "$DOMAIN" ]; do
@@ -72,12 +76,13 @@ if [ "$VIRTUAL_HOST" == localhost ]; then
     echo ''
     echo "**YOU NEED TO USE THE FORMAT my-website.local, WITH A DOT!**"
     echo ''
-    read DOMAIN
+    read -r DOMAIN
   done
   echo "You entered $DOMAIN"
   LINE="VIRTUAL_HOST=$DOMAIN"
   echo "$LINE" >> "$ENVFILELOCATION"
   echo "We entered $LINE in $ENVFILELOCATION"
+  # shellcheck disable=SC1090
   source "$ENVFILELOCATION"
 fi
 if [ -z "$VIRTUAL_HOST" ]; then

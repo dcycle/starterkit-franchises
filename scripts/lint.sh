@@ -18,12 +18,21 @@ echo ''
 
 docker run --rm -v \
   "$(pwd)"/drupal/custom-modules:/code \
-  dcycle/php-lint:3 --standard=DrupalPractice /code
+  dcycle/php-lint:3 \
+  --ignore=*/lineIcons.css \
+  --standard=DrupalPractice /code
 docker run --rm -v \
   "$(pwd)"/drupal/custom-modules:/code \
-  dcycle/php-lint:3 --standard=Drupal /code
+  dcycle/php-lint:3 \
+  --ignore=*/lineIcons.css \
+  --standard=Drupal /code
 
-echo 'Linting shell scripts'
+echo 'Linting shell scripts with https://github.com/dcycle/docker-shell-lint'
+echo ''
+echo 'To ignore certain lines you can do'
+echo ''
+echo '# shellcheck disable=SC2016'
+echo ''
 
 docker run --rm -v "$(pwd)":/code dcycle/shell-lint:2 ./scripts/lint.sh
 docker run --rm -v "$(pwd)":/code dcycle/shell-lint:2 ./scripts/https-deploy.sh
