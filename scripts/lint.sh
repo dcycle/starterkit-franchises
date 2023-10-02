@@ -25,5 +25,5 @@ docker run --rm -v \
 
 echo 'Linting shell scripts'
 
-docker run --rm -v "$(pwd)":/code dcycle/shell-lint ./scripts/lint.sh
-docker run --rm -v "$(pwd)":/code dcycle/shell-lint ./scripts/https-deploy.sh
+docker run --rm -v "$(pwd)":/code dcycle/shell-lint:2 ./scripts/lint.sh
+docker run --rm -v "$(pwd)":/code dcycle/shell-lint:2 ./scripts/https-deploy.sh
